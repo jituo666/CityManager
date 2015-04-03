@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">全民城管</string>
+    <string name="action_settings">Settings</string>
+    <string name="bt_picture_report">拍照上传</string>
+    
+    <string name="bt_text_report">问题反映</string>
+    
+    <string name="bt_user_comm">在线互动</string>
+    <string name="bt_user_center">个人中心</string>
+
+</resources>
