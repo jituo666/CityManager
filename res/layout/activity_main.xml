@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cp_main_background_color"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.xmkj.citymanager.MainActivity" >
 
+    <include layout="@layout/common_title_bar" />
+
     <ListView
+        android:id="@+id/news_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher" />
+                android:src="@drawable/ic_main_fun_interest" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher" />
+                android:src="@drawable/ic_main_fun_guide" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher" />
+                android:src="@drawable/ic_main_fun_browse" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher" />
+                android:src="@drawable/ic_main_fun_beautify" />
 
             <TextView
                 android:layout_width="match_parent"

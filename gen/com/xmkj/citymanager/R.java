@@ -8,7 +8,21 @@
 package com.xmkj.citymanager;
 
 public final class R {
+    public static final class array {
+        public static final int issue_area=0x7f070001;
+        public static final int issue_type=0x7f070000;
+        public static final int picture_type=0x7f070002;
+    }
     public static final class attr {
+    }
+    public static final class color {
+        public static final int common_dark=0x7f040006;
+        public static final int common_grey=0x7f040005;
+        public static final int cp_main_background_color=0x7f040004;
+        public static final int np_common_bar_bg=0x7f040001;
+        public static final int np_main_text_color_normal=0x7f040000;
+        public static final int np_major_text_color=0x7f040002;
+        public static final int np_minor_text_color=0x7f040003;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -18,32 +32,130 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050002;
+        public static final int activity_vertical_margin=0x7f050003;
+        public static final int common_text_size_middle=0x7f050005;
+        public static final int common_text_size_small=0x7f050006;
+        public static final int common_title_text_size=0x7f050004;
+        public static final int letool_action_bar_height=0x7f050007;
+        public static final int letool_camera_source_settings_item_height=0x7f050001;
+        public static final int letool_camera_source_settings_item_padding=0x7f050000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int common_list_item_bg=0x7f020000;
+        public static final int ic_action_new=0x7f020001;
+        public static final int ic_action_person=0x7f020002;
+        public static final int ic_action_previous_item=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int ic_main_fun_beautify=0x7f020005;
+        public static final int ic_main_fun_browse=0x7f020006;
+        public static final int ic_main_fun_guide=0x7f020007;
+        public static final int ic_main_fun_interest=0x7f020008;
+        public static final int np_list_divider_bg=0x7f020009;
+        public static final int np_pressed_drawable=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
-        public static final int picture_report=0x7f080000;
-        public static final int text_report=0x7f080001;
-        public static final int user_center=0x7f080003;
-        public static final int user_comm=0x7f080002;
+        public static final int action_bar_normal=0x7f090014;
+        public static final int action_navi=0x7f090015;
+        public static final int desc_content=0x7f090025;
+        public static final int desc_title=0x7f090024;
+        public static final int exit_login=0x7f09000c;
+        public static final int image=0x7f090011;
+        public static final int issue_type=0x7f090028;
+        public static final int issue_type_content=0x7f090029;
+        public static final int iv_pciture=0x7f09001a;
+        public static final int location_content=0x7f09001f;
+        public static final int location_title=0x7f09001e;
+        public static final int navi_text=0x7f090016;
+        public static final int news_list=0x7f090000;
+        public static final int ok_report=0x7f090026;
+        public static final int picture_report=0x7f090001;
+        public static final int picture_report_desc=0x7f090023;
+        public static final int picture_report_location=0x7f09001d;
+        public static final int picture_report_time=0x7f090005;
+        public static final int picture_report_type=0x7f090020;
+        public static final int place_content=0x7f09002d;
+        public static final int place_title=0x7f09002c;
+        public static final int report_phone=0x7f09002f;
+        public static final int report_phone_content=0x7f090030;
+        public static final int scrollView=0x7f09001b;
+        public static final int text_album=0x7f090018;
+        public static final int text_camera=0x7f090017;
+        public static final int text_cancel=0x7f090019;
+        public static final int text_content=0x7f090013;
+        public static final int text_report=0x7f090002;
+        public static final int text_report_desc=0x7f090031;
+        public static final int text_report_location=0x7f09002a;
+        public static final int text_report_phone=0x7f09002e;
+        public static final int text_report_place=0x7f09002b;
+        public static final int text_report_type=0x7f090027;
+        public static final int text_title=0x7f090012;
+        public static final int time_content=0x7f09001c;
+        public static final int time_title=0x7f090006;
+        public static final int type_content=0x7f090022;
+        public static final int type_title=0x7f090021;
+        public static final int user_app_about=0x7f09000b;
+        public static final int user_center=0x7f090004;
+        public static final int user_comm=0x7f090003;
+        public static final int user_gender=0x7f090008;
+        public static final int user_login=0x7f09000f;
+        public static final int user_msg_history=0x7f090009;
+        public static final int user_msg_switch=0x7f09000a;
+        public static final int user_name=0x7f090007;
+        public static final int user_name_input=0x7f09000d;
+        public static final int user_pwd_input=0x7f09000e;
+        public static final int user_register=0x7f090010;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-    }
-    public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int activity_user_center=0x7f030001;
+        public static final int activity_user_login=0x7f030002;
+        public static final int activity_user_register=0x7f030003;
+        public static final int common_list_item=0x7f030004;
+        public static final int common_title_bar=0x7f030005;
+        public static final int picture_dialog=0x7f030006;
+        public static final int picture_list_item=0x7f030007;
+        public static final int picture_report_view=0x7f030008;
+        public static final int text_report_view=0x7f030009;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int bt_picture_report=0x7f050002;
-        public static final int bt_text_report=0x7f050003;
-        public static final int bt_user_center=0x7f050005;
-        public static final int bt_user_comm=0x7f050004;
+        public static final int app_about=0x7f06001c;
+        public static final int app_name=0x7f060000;
+        public static final int bt_picture_report=0x7f060003;
+        public static final int bt_text_report=0x7f060004;
+        public static final int bt_user_center=0x7f060006;
+        public static final int bt_user_comm=0x7f060005;
+        public static final int common_cancel=0x7f060009;
+        public static final int common_exit=0x7f06001d;
+        public static final int common_login=0x7f06001e;
+        public static final int common_register=0x7f060021;
+        public static final int common_user_login=0x7f06001f;
+        public static final int common_user_register=0x7f060020;
+        public static final int picker_from_album=0x7f060008;
+        public static final int picker_from_camera=0x7f060007;
+        public static final int picture_upload_tip_1=0x7f060001;
+        public static final int picture_upload_tip_2=0x7f060002;
+        public static final int report_desc=0x7f06000e;
+        public static final int report_desc_picture_hint=0x7f060011;
+        public static final int report_desc_text_hint=0x7f060012;
+        public static final int report_location=0x7f06000b;
+        public static final int report_ok=0x7f06000f;
+        public static final int report_pciture_capture=0x7f060010;
+        public static final int report_phone=0x7f06000c;
+        public static final int report_phone_hint=0x7f060013;
+        public static final int report_time=0x7f06000a;
+        public static final int report_type=0x7f06000d;
+        public static final int text_report_desc=0x7f060017;
+        public static final int text_report_location=0x7f060016;
+        public static final int text_report_sub_type=0x7f060015;
+        public static final int text_report_type=0x7f060014;
+        public static final int user_login_hint_user_name=0x7f060022;
+        public static final int user_login_hint_user_pwd=0x7f060023;
+        public static final int user_login_toast=0x7f060024;
+        public static final int user_msg_switch=0x7f06001b;
+        public static final int user_report_history=0x7f06001a;
+        public static final int user_report_score=0x7f060019;
+        public static final int user_report_user=0x7f060018;
     }
     public static final class style {
         /** 
@@ -67,10 +179,17 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f080001;
+        public static final int MainTheme=0x7f080002;
+        public static final int MyDialog=0x7f080008;
+        public static final int MyWidget=0x7f080003;
+        public static final int MyWidget_ActionBarPanel=0x7f080004;
+        public static final int MyWidget_AdapterView=0x7f080005;
+        public static final int MyWidget_ListView=0x7f080006;
+        public static final int MyWidget_ListViewItem2=0x7f080007;
     }
 }

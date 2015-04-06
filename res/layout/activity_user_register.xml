@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cp_main_background_color"
+    android:orientation="vertical"
+    tools:context="com.xmkj.citymanager.MainActivity" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/user_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left|center_vertical"
+            android:hint="@string/user_login_hint_user_name"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+        <EditText
+            android:id="@+id/user_pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left|center_vertical"
+            android:hint="@string/user_login_hint_user_pwd"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+        <Button
+            android:id="@+id/user_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/common_register"
+            android:textColor="@color/np_major_text_color"
+            android:textSize="@dimen/common_text_size_middle" />
+
+    </LinearLayout>
+
+</LinearLayout>
