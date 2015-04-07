@@ -15,7 +15,7 @@ public class NewsDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table if not exists tb_news (_id INTEGER  primary key autoincrement, title TEXT, content TEXT, time TEXT,imageUrl TEXT)");
+        db.execSQL("create table if not exists tb_news (_id INTEGER primary key autoincrement, title TEXT, content TEXT, time TEXT,author TEXT,imageUrl TEXT)");
     }
 
     @Override

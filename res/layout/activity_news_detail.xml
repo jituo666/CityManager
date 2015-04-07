@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cp_main_background_color"
+    android:orientation="vertical"
+    tools:context="com.xmkj.citymanager.MainActivity" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/newTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:textColor="@color/np_major_text_color"
+                android:textSize="@dimen/common_title_text_size" />
+
+            <TextView
+                android:id="@+id/newAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="right"
+                android:textColor="@color/np_minor_text_color"
+                android:textSize="@dimen/common_text_size_small" />
+            <ImageView
+                android:id="@+id/newImage"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/newContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:textColor="@color/np_minor_text_color"
+                android:textSize="@dimen/common_text_size_middle" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

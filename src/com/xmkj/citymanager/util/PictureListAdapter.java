@@ -101,7 +101,7 @@ public class PictureListAdapter extends BaseAdapter {
                 .cacheInMemory(true)
                 .cacheOnDisc(true)
                 .considerExifParams(true)
-                .displayer(new RoundedBitmapDisplayer(20))
+                .displayer(new RoundedBitmapDisplayer(0))
                 .build();
     }
 
@@ -113,7 +113,7 @@ public class PictureListAdapter extends BaseAdapter {
     }
 
     //
-    private static class AnimateFirstDisplayListener extends SimpleImageLoadingListener {
+    public static class AnimateFirstDisplayListener extends SimpleImageLoadingListener {
 
         static final List<String> displayedImages = Collections.synchronizedList(new LinkedList<String>());
 
