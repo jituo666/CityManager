@@ -43,13 +43,4 @@
         android:textSize="@dimen/common_text_size_small" >
     </TextView>
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="12dp"
-        android:layout_toRightOf="@id/text_title"
-        android:background="@drawable/np_list_divider_bg" />
-
 </RelativeLayout>

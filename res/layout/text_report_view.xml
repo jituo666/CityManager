@@ -129,9 +129,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="36dp"
                     android:gravity="left|center_vertical"
-                    android:maxLength="11"
                     android:hint="@string/report_phone_hint"
                     android:inputType="phone"
+                    android:maxLength="11"
                     android:textColor="@color/np_major_text_color"
                     android:textSize="@dimen/common_text_size_middle" />
             </LinearLayout>
@@ -180,8 +180,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="12dp"
+        android:background="@color/np_common_bar_bg"
         android:text="@string/report_ok"
-        android:textColor="@color/np_major_text_color"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/common_text_size_middle" />
 
 </LinearLayout>

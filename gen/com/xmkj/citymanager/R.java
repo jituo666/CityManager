@@ -147,8 +147,10 @@ public final class R {
         public static final int common_user_register=0x7f060020;
         public static final int picker_from_album=0x7f060008;
         public static final int picker_from_camera=0x7f060007;
+        public static final int picture_upload_success=0x7f060027;
         public static final int picture_upload_tip_1=0x7f060001;
         public static final int picture_upload_tip_2=0x7f060002;
+        public static final int picture_uploading=0x7f060026;
         public static final int report_desc=0x7f06000e;
         public static final int report_desc_picture_hint=0x7f060011;
         public static final int report_desc_text_hint=0x7f060012;

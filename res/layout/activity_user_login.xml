@@ -40,19 +40,20 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="24dp"
+            android:background="@color/np_common_bar_bg"
             android:text="@string/common_login"
-            android:textColor="@color/np_major_text_color"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/common_text_size_middle" />
 
         <TextView
             android:id="@+id/user_register"
             android:layout_width="match_parent"
             android:layout_height="36dp"
-            android:textColor="@color/common_dark"
-            android:text="@string/common_user_register"
-            android:gravity="right|center_vertical"
-            android:layout_marginTop="18dp"
             android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/common_user_register"
+            android:textColor="@color/common_dark"
             android:textSize="@dimen/common_text_size_small" />
     </LinearLayout>
 

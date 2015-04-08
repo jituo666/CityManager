@@ -61,6 +61,7 @@ public class MainActivity extends Activity implements OnClickListener {
                     if (System.currentTimeMillis() -GlobalPreference.getLastUpdateTime(MainActivity.this) > TIM_INTERVAL ) {
                         List<AVObject> list = query.whereGreaterThan("date", l.get(0).time).find();
                         newManager.addNews(list);
+                        GlobalPreference.setLastUpdateTime(MainActivity.this, System.currentTimeMillis());
                     }
                 }
             } catch (AVException e) {

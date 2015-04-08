@@ -127,6 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
+                    style="@android:attr/spinnerDropDownItemStyle"
                     android:textColor="@color/np_major_text_color"
                     android:textSize="@dimen/common_text_size_middle" >
                 </Spinner>
@@ -178,8 +179,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="12dp"
+        android:background="@color/np_common_bar_bg"
         android:text="@string/report_ok"
-        android:textColor="@color/np_major_text_color"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/common_text_size_middle" />
 
 </LinearLayout>

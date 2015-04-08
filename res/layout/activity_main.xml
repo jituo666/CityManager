@@ -48,7 +48,8 @@
                 android:layout_height="24dp"
                 android:gravity="center"
                 android:text="@string/bt_picture_report"
-                android:textColor="@color/np_minor_text_color" />
+                android:textColor="@color/np_common_bar_bg"
+                android:textSize="@dimen/common_text_size_small" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,7 +70,8 @@
                 android:layout_height="24dp"
                 android:gravity="center"
                 android:text="@string/bt_text_report"
-                android:textColor="@color/np_minor_text_color" />
+                android:textColor="@color/np_common_bar_bg"
+                android:textSize="@dimen/common_text_size_small" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +92,8 @@
                 android:layout_height="24dp"
                 android:gravity="center"
                 android:text="@string/bt_user_comm"
-                android:textColor="@color/np_minor_text_color" />
+                android:textColor="@color/np_common_bar_bg"
+                android:textSize="@dimen/common_text_size_small" />
         </LinearLayout>
 
         <LinearLayout
@@ -111,7 +114,8 @@
                 android:layout_height="24dp"
                 android:gravity="center"
                 android:text="@string/bt_user_center"
-                android:textColor="@color/np_minor_text_color" />
+                android:textColor="@color/np_common_bar_bg"
+                android:textSize="@dimen/common_text_size_small" />
         </LinearLayout>
     </LinearLayout>
 
