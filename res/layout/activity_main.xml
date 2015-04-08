@@ -13,93 +13,105 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:divider="@drawable/np_list_divider_bg"
+        android:dividerHeight="1dp"
         android:orientation="vertical" >
     </ListView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="96dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal" >
 
         <LinearLayout
+            android:id="@+id/picture_report"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/picture_report"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
+                android:layout_height="32dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_main_fun_interest" />
+                android:src="@drawable/picture_report_selector" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:gravity="center"
-                android:text="@string/bt_picture_report" />
+                android:text="@string/bt_picture_report"
+                android:textColor="@color/np_minor_text_color" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/text_report"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/text_report"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
+                android:layout_height="32dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_main_fun_guide" />
+                android:src="@drawable/text_report_selector" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:gravity="center"
-                android:text="@string/bt_text_report" />
+                android:text="@string/bt_text_report"
+                android:textColor="@color/np_minor_text_color" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/user_comm"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/user_comm"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
+                android:layout_height="32dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_main_fun_browse" />
+                android:src="@drawable/online_report_selector" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:gravity="center"
-                android:text="@string/bt_user_comm" />
+                android:text="@string/bt_user_comm"
+                android:textColor="@color/np_minor_text_color" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/user_center"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical" >
 
-            <ImageButton
-                android:id="@+id/user_center"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
+                android:layout_height="32dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_main_fun_beautify" />
+                android:src="@drawable/personal_center_selector" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:gravity="center"
-                android:text="@string/bt_user_center" />
+                android:text="@string/bt_user_center"
+                android:textColor="@color/np_minor_text_color" />
         </LinearLayout>
     </LinearLayout>
 

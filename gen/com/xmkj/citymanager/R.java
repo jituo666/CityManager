@@ -42,17 +42,26 @@ public final class R {
         public static final int letool_camera_source_settings_item_padding=0x7f050000;
     }
     public static final class drawable {
-        public static final int common_list_item_bg=0x7f020000;
-        public static final int ic_action_new=0x7f020001;
-        public static final int ic_action_person=0x7f020002;
-        public static final int ic_action_previous_item=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_main_fun_beautify=0x7f020005;
-        public static final int ic_main_fun_browse=0x7f020006;
-        public static final int ic_main_fun_guide=0x7f020007;
-        public static final int ic_main_fun_interest=0x7f020008;
-        public static final int np_list_divider_bg=0x7f020009;
-        public static final int np_pressed_drawable=0x7f02000a;
+        public static final int camera_report_click=0x7f020000;
+        public static final int camera_report_normal=0x7f020001;
+        public static final int common_list_item_bg=0x7f020002;
+        public static final int default_bg=0x7f020003;
+        public static final int ic_action_new=0x7f020004;
+        public static final int ic_action_person=0x7f020005;
+        public static final int ic_action_previous_item=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int np_list_divider_bg=0x7f020012;
+        public static final int np_pressed_drawable=0x7f020013;
+        public static final int online_click=0x7f020008;
+        public static final int online_normal=0x7f020009;
+        public static final int online_report_selector=0x7f02000a;
+        public static final int person_click=0x7f02000b;
+        public static final int person_normal=0x7f02000c;
+        public static final int personal_center_selector=0x7f02000d;
+        public static final int picture_report_selector=0x7f02000e;
+        public static final int text_report_click=0x7f02000f;
+        public static final int text_report_normal=0x7f020010;
+        public static final int text_report_selector=0x7f020011;
     }
     public static final class id {
         public static final int action_bar_normal=0x7f090018;
@@ -158,6 +167,7 @@ public final class R {
         public static final int user_login_hint_user_pwd=0x7f060023;
         public static final int user_login_toast=0x7f060024;
         public static final int user_msg_switch=0x7f06001b;
+        public static final int user_place=0x7f060025;
         public static final int user_report_history=0x7f06001a;
         public static final int user_report_score=0x7f060019;
         public static final int user_report_user=0x7f060018;

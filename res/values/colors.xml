@@ -2,7 +2,7 @@
 <resources>
 
     <color name="np_main_text_color_normal">#FFDBDBDB</color>
-    <color name="np_common_bar_bg">#FF273036</color>
+    <color name="np_common_bar_bg">#168391</color>
     <color name="np_major_text_color">#FF383030</color>
     <color name="np_minor_text_color">#FF8C8C8C</color>
 

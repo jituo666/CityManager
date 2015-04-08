@@ -34,9 +34,9 @@ public class NewsAdapter extends BaseAdapter {
         mDatas = data;
         mContext = cxt;
         options = new DisplayImageOptions.Builder()
-        .showImageOnLoading(R.drawable.ic_launcher)
-        .showImageForEmptyUri(R.drawable.ic_launcher)
-        .showImageOnFail(R.drawable.ic_launcher)
+        .showImageOnLoading(R.drawable.default_bg)
+        .showImageForEmptyUri(R.drawable.default_bg)
+        .showImageOnFail(R.drawable.default_bg)
         .cacheInMemory(true)
         .cacheOnDisc(true)
         .considerExifParams(true)

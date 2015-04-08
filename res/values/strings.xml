@@ -39,7 +39,7 @@
     <string name="user_login_hint_user_name">请输入11位手机号</string>
     <string name="user_login_hint_user_pwd">请输入6～16位密码</string>
     <string name="user_login_toast">请输入正确的用户名和密码</string>
-
+    <string name="user_place">经度:%1$s,纬度:%2$s</string>
     <string-array name="issue_type">
         <item>游商占道</item>
         <item>沿街晾挂</item>

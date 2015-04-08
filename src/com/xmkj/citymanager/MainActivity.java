@@ -1,3 +1,4 @@
+
 package com.xmkj.citymanager;
 
 import java.util.List;
@@ -23,21 +24,21 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class MainActivity extends Activity implements OnClickListener {
 
+    private static final long TIM_INTERVAL = 10 * 60 * 1000;
     protected static final int TAKE_PHOTO = 1;// 拍照
     protected static final int PHOTO_ZOOM = 2; // 缩放
     protected static final int PHOTO_RESOULT = 3;// 结果
     protected static final String IMAGE_UNSPECIFIED = "image/*";
 
     private ListView mNewsList;
-    private ImageButton mPictureReport;
-    private ImageButton mTextReport;
-    private ImageButton mUserCommReport;
-    private ImageButton mUserCenterReport;
+    private View mPictureReport;
+    private View mTextReport;
+    private View mUserCommReport;
+    private View mUserCenterReport;
     private View mBackView;
     //
     private NewsAdapter mNewsAdapter;
@@ -57,8 +58,10 @@ public class MainActivity extends Activity implements OnClickListener {
                     List<AVObject> list = query.find();
                     newManager.addNews(list);
                 } else {
-                    List<AVObject> list = query.whereGreaterThan("date", l.get(0).time).find();
-                    newManager.addNews(list);
+                    if (System.currentTimeMillis() -GlobalPreference.getLastUpdateTime(MainActivity.this) > TIM_INTERVAL ) {
+                        List<AVObject> list = query.whereGreaterThan("date", l.get(0).time).find();
+                        newManager.addNews(list);
+                    }
                 }
             } catch (AVException e) {
                 e.printStackTrace();
@@ -94,7 +97,7 @@ public class MainActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         AVAnalytics.trackAppOpened(getIntent());
         //
-        //NewDataPrepare.prepare();
+        // NewDataPrepare.prepare();
         //
         setContentView(R.layout.activity_main);
         mNewsList = (ListView) this.findViewById(R.id.news_list);
@@ -111,10 +114,10 @@ public class MainActivity extends Activity implements OnClickListener {
                 startActivity(it);
             }
         });
-        mPictureReport = (ImageButton) this.findViewById(R.id.picture_report);
-        mTextReport = (ImageButton) this.findViewById(R.id.text_report);
-        mUserCommReport = (ImageButton) this.findViewById(R.id.user_comm);
-        mUserCenterReport = (ImageButton) this.findViewById(R.id.user_center);
+        mPictureReport = (View) this.findViewById(R.id.picture_report);
+        mTextReport = (View) this.findViewById(R.id.text_report);
+        mUserCommReport = (View) this.findViewById(R.id.user_comm);
+        mUserCenterReport = (View) this.findViewById(R.id.user_center);
         mBackView = findViewById(R.id.action_navi);
         mPictureReport.setOnClickListener(this);
         mTextReport.setOnClickListener(this);

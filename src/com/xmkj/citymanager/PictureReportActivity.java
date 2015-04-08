@@ -9,9 +9,11 @@ import java.util.Locale;
 import com.xmkj.citymanager.util.PictureHorizontalScrollview;
 import com.xmkj.citymanager.util.PictureListAdapter;
 
-
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +27,7 @@ import android.widget.Toast;
 public class PictureReportActivity extends Activity {
 
     private TextView mTextViewTime;
+    private TextView mPlaceView;
     private TextView mTitle;
     private View mExit;
     private Button mUpload;
@@ -76,6 +79,13 @@ public class PictureReportActivity extends Activity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner s = (Spinner) findViewById(R.id.type_content);
         s.setAdapter(adapter);
+        //
+        mPlaceView = (TextView)this.findViewById(R.id.location_content);
+        LocationManager locMan = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Location loc = locMan.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        if (loc != null) {
+            mPlaceView.setText(getString(R.string.user_place,String.valueOf(loc.getLongitude()),String.valueOf(loc.getLatitude())));
+        }
     }
 
 

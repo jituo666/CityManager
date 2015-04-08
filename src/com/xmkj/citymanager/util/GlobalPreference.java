@@ -16,6 +16,7 @@ public class GlobalPreference {
     private static final String PREFS_KEY_USER_PWD = "user_pwd";
     private static final String PREFS_KEY_USER_SCORE = "user_score";
     private static final String PREFS_KEY_REPORT_COUNT = "report_count";
+    private static final String PREFS_KEY_LAST_UPDATE_TIME = "last_update_time";
 
     private static SharedPreferences initSharedPreferences(Context ctx) {
         if (sPrefs == null) {
@@ -62,5 +63,15 @@ public class GlobalPreference {
     public static void setUserScore(Context ctx, int userScore) {
         SharedPreferences prefs = initSharedPreferences(ctx);
         SharedPreferencesCompat.apply(prefs.edit().putInt(PREFS_KEY_USER_SCORE, userScore));
+    }
+    
+    public static long getLastUpdateTime(Context ctx) {
+        SharedPreferences prefs = initSharedPreferences(ctx);
+        return prefs.getLong(PREFS_KEY_LAST_UPDATE_TIME, 0);
+    }
+
+    public static void setLastUpdateTime(Context ctx, long lastTime) {
+        SharedPreferences prefs = initSharedPreferences(ctx);
+        SharedPreferencesCompat.apply(prefs.edit().putLong(PREFS_KEY_LAST_UPDATE_TIME, lastTime));
     }
 }
